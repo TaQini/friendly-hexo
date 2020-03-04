@@ -1,0 +1,21 @@
+<footer>
+    <div class="jumbotron jumbotron-fluid mb-0">
+        <div class="container-fluid">
+            <div class="col text-center">
+                <p class="copyright text-muted">
+                    Copyright &copy; <%- theme.title %>
+                    <br>
+                    驱动 <a href="https://hexo.io">Hexo</a> | 
+                    主题 <a href="https://github.com/Hanlin-Dong/hexo-theme-adagio">Adagio</a> | 
+                    技术支持 <a href="http://taqini.space">TaQini</a> 
+                    <br>
+                    <%- theme.footer_content %>
+              </p>
+                <% if (theme.ICP.enable) { %>
+                   <img src="<%- theme.ICP.icon %>" style="max-width: 100%"> 
+                   <a href="<%- theme.ICP.url %>"> <%- theme.ICP.text %> </a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  hexo:
+    build: .
+    user: root
+    volumes:
+      - ./:/opt/hexo/blog
+    ports:
+      - "8080:4000"
+    command: hexo s
+    
